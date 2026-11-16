@@ -19,6 +19,8 @@ const processes = [
     description:
       "We procure products from reliable vendors, ensuring quality specifications, competitive sourcing and customer requirements.",
     icon: Search,
+    image:
+      "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=85",
   },
   {
     number: "02",
@@ -27,6 +29,8 @@ const processes = [
     description:
       "Every product undergoes quality checks to ensure compliance with specifications and expected standards.",
     icon: ShieldCheck,
+    image:
+      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=85",
   },
   {
     number: "03",
@@ -35,6 +39,8 @@ const processes = [
     description:
       "Products are processed, handled and packaged with attention to safety, quality and customer requirements.",
     icon: PackageCheck,
+    image:
+      "https://images.unsplash.com/photo-1601598851547-4302969d0614?auto=format&fit=crop&w=900&q=85",
   },
   {
     number: "04",
@@ -43,6 +49,8 @@ const processes = [
     description:
       "We coordinate transportation and shipping to support efficient movement of products from source to destination.",
     icon: Truck,
+    image:
+      "https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=900&q=85",
   },
   {
     number: "05",
@@ -51,14 +59,20 @@ const processes = [
     description:
       "Our distribution process focuses on proper handling, storage and timely delivery to customers.",
     icon: Warehouse,
+    image:
+      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=900&q=85",
   },
 ];
 
 export default function HowWeDo() {
   return (
-    <section className="relative overflow-hidden bg-[#F7F7F5] py-20 sm:py-24 lg:py-28">
+    <section className="relative overflow-hidden bg-[#EEF1E8] py-20 sm:py-24 lg:py-28">
 
-      <div className="container-main">
+      {/* Background Decorations */}
+      <div className="pointer-events-none absolute -left-32 top-20 h-80 w-80 rounded-full bg-[#DCE5CD]/50 blur-3xl" />
+      <div className="pointer-events-none absolute -right-32 bottom-10 h-96 w-96 rounded-full bg-[#F8DCC8]/40 blur-3xl" />
+
+      <div className="container-main relative z-10">
 
         {/* HEADER */}
         <motion.div
@@ -86,7 +100,7 @@ export default function HowWeDo() {
         <div className="relative">
 
           {/* CONNECTING LINE - DESKTOP */}
-          <div className="absolute left-[10%] right-[10%] top-[45px] hidden h-[2px] bg-[#DDE3D5] lg:block" />
+          <div className="absolute left-[10%] right-[10%] top-[45px] hidden h-[2px] bg-[#D5DDCA] lg:block" />
 
           {/* PROCESS ITEMS */}
           <div className="grid items-stretch gap-10 sm:grid-cols-2 lg:grid-cols-5 lg:gap-5">
@@ -108,7 +122,7 @@ export default function HowWeDo() {
                 >
 
                   {/* ICON NODE */}
-                  <div className="relative z-10 flex h-[90px] w-[90px] shrink-0 items-center justify-center rounded-full border-[5px] border-[#F7F7F5] bg-[#526B1D] text-white shadow-[0_0_0_1px_#DDE3D5] transition-all duration-500 group-hover:scale-110 group-hover:bg-[#FF6B00]">
+                  <div className="relative z-10 flex h-[90px] w-[90px] shrink-0 items-center justify-center rounded-full border-[5px] border-[#EEF1E8] bg-[#526B1D] text-white shadow-[0_0_0_1px_#D5DDCA] transition-all duration-500 group-hover:scale-110 group-hover:bg-[#FF6B00]">
                     <Icon size={34} strokeWidth={1.6} />
                   </div>
 
@@ -117,34 +131,63 @@ export default function HowWeDo() {
                     STEP {process.number}
                   </span>
 
-                  {/* EQUAL HEIGHT CONTENT CARD */}
-                  <div className="mt-3 flex min-h-[340px] w-full flex-1 flex-col rounded-2xl border border-[#E7E7E4] bg-white p-5 shadow-sm transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-lg sm:p-6 lg:min-h-[360px]">
+                  {/* PROCESS CARD */}
+                  <div className="mt-3 flex min-h-[450px] w-full flex-1 flex-col overflow-hidden rounded-2xl border border-[#E1E6D9] bg-white shadow-[0_5px_20px_rgba(45,60,30,0.04)] transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-[0_18px_40px_rgba(45,60,30,0.12)]">
 
-                    {/* TITLE */}
-                    <h3 className="flex min-h-[64px] items-center justify-center text-[19px] font-bold leading-[1.35] text-[#292929]">
-                      {process.title}
-                    </h3>
+                    {/* CARD IMAGE */}
+                    <div className="relative h-[170px] w-full shrink-0 overflow-hidden">
+                      <img
+                        src={process.image}
+                        alt={process.title}
+                        loading="lazy"
+                        className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
 
-                    {/* SUBTITLE */}
-                    <p className="mt-2 min-h-[36px] text-xs font-semibold uppercase tracking-[1px] text-[#526B1D]">
-                      {process.subtitle}
-                    </p>
+                      {/* Image Overlay */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#172014]/65 via-transparent to-transparent" />
 
-                    {/* ACCENT */}
-                    <div className="mx-auto my-4 h-[2px] w-12 shrink-0 rounded-full bg-[#FF6B00] transition-all duration-300 group-hover:w-20" />
-
-                    {/* DESCRIPTION */}
-                    <p className="flex-1 text-[14px] leading-[1.8] text-[#707070]">
-                      {process.description}
-                    </p>
-
-                    {/* CARD BOTTOM */}
-                    <div className="mt-auto border-t border-[#EEEEEC] pt-4">
-                      <span className="text-xs font-semibold uppercase tracking-wider text-[#526B1D]">
-                        Process {process.number}
+                      {/* Image Number */}
+                      <span className="absolute bottom-4 left-5 text-[32px] font-light tracking-wide text-white/90">
+                        {process.number}
                       </span>
+
+                      {/* Icon Badge */}
+                      <div className="absolute bottom-4 right-4 flex h-11 w-11 items-center justify-center rounded-xl border border-white/30 bg-white/90 text-[#526B1D] shadow-lg backdrop-blur-sm">
+                        <Icon size={22} strokeWidth={1.8} />
+                      </div>
                     </div>
 
+                    {/* CARD CONTENT */}
+                    <div className="flex flex-1 flex-col p-5 sm:p-6">
+
+                      {/* TITLE */}
+                      <h3 className="flex min-h-[64px] items-center justify-center text-[19px] font-bold leading-[1.35] text-[#292929]">
+                        {process.title}
+                      </h3>
+
+                      {/* SUBTITLE */}
+                      <p className="mt-2 min-h-[36px] text-xs font-semibold uppercase tracking-[1px] text-[#526B1D]">
+                        {process.subtitle}
+                      </p>
+
+                      {/* ACCENT */}
+                      <div className="mx-auto my-4 h-[2px] w-12 shrink-0 rounded-full bg-[#FF6B00] transition-all duration-300 group-hover:w-20" />
+
+                      {/* DESCRIPTION */}
+                      <p className="flex-1 text-[14px] leading-[1.8] text-[#707070]">
+                        {process.description}
+                      </p>
+
+                      {/* CARD BOTTOM */}
+                      <div className="mt-5 border-t border-[#EEEEEC] pt-4">
+                        <span className="text-xs font-semibold uppercase tracking-wider text-[#526B1D]">
+                          Process {process.number}
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* BOTTOM ACCENT */}
+                    <div className="h-[3px] w-0 bg-[#FF6B00] transition-all duration-500 group-hover:w-full" />
                   </div>
 
                   {/* MOBILE CONNECTOR */}
@@ -162,7 +205,7 @@ export default function HowWeDo() {
         </div>
 
         {/* BOTTOM HIGHLIGHT */}
-        <div className="mt-16 flex flex-col items-center justify-between gap-5 rounded-2xl bg-[#292929] px-7 py-8 text-center sm:flex-row sm:text-left sm:px-10">
+        <div className="mt-16 flex flex-col items-center justify-between gap-5 rounded-2xl bg-[#292929] px-7 py-8 text-center sm:flex-row sm:px-10 sm:text-left">
 
           <div>
             <h3 className="text-xl font-semibold text-white sm:text-2xl">

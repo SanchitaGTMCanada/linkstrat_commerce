@@ -21,6 +21,8 @@ const services = [
     icon: ShoppingCart,
     color: "#526B1D",
     background: "#EDF2E5",
+    image:
+      "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1000&q=85",
   },
   {
     number: "02",
@@ -30,6 +32,8 @@ const services = [
     icon: Truck,
     color: "#E66A18",
     background: "#FFF0E5",
+    image:
+      "https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=1000&q=85",
   },
   {
     number: "03",
@@ -39,6 +43,8 @@ const services = [
     icon: FileCheck,
     color: "#2459D3",
     background: "#EAF0FA",
+    image:
+      "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1000&q=85",
   },
   {
     number: "04",
@@ -48,6 +54,8 @@ const services = [
     icon: Globe2,
     color: "#79508C",
     background: "#F2EAF5",
+    image:
+      "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=85",
   },
   {
     number: "05",
@@ -57,6 +65,8 @@ const services = [
     icon: Boxes,
     color: "#A65F32",
     background: "#F8EEE5",
+    image:
+      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1000&q=85",
   },
   {
     number: "06",
@@ -66,6 +76,8 @@ const services = [
     icon: Ship,
     color: "#287A78",
     background: "#E7F2F0",
+    image:
+      "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1000&q=85",
   },
 ];
 
@@ -73,8 +85,12 @@ export default function CoreServices() {
   return (
     <section
       id="services"
-      className="relative overflow-hidden bg-[#F7F7F5] py-20 sm:py-24 lg:py-28"
+      className="relative isolate overflow-hidden bg-[#EEF1E8] py-20 sm:py-24 lg:py-28"
     >
+      {/* Decorative Background */}
+      <div className="pointer-events-none absolute -left-32 top-20 h-80 w-80 rounded-full bg-[#DCE5CD]/50 blur-3xl" />
+      <div className="pointer-events-none absolute -right-32 bottom-20 h-96 w-96 rounded-full bg-[#F8DCC8]/40 blur-3xl" />
+
       <div className="container-main relative z-10 mx-auto px-5 sm:px-8 lg:px-12">
 
         {/* Heading */}
@@ -123,8 +139,8 @@ export default function CoreServices() {
           </motion.div>
         </div>
 
-        {/* Service Panels */}
-        <div className="grid gap-5 md:grid-cols-2">
+        {/* Service Cards */}
+        <div className="grid gap-6 md:grid-cols-2">
           {services.map((service, index) => {
             const Icon = service.icon;
 
@@ -138,30 +154,40 @@ export default function CoreServices() {
                   duration: 0.55,
                   delay: (index % 2) * 0.1,
                 }}
-                className="group relative flex min-h-[235px] flex-col overflow-hidden rounded-[20px] border border-[#E7E7E3] bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[#D8D8D2] hover:shadow-[0_18px_40px_rgba(0,0,0,0.07)] sm:p-8"
+                className="group relative flex min-h-[390px] flex-col overflow-hidden rounded-[22px] border border-[#E1E6D9] bg-white shadow-[0_5px_20px_rgba(45,60,30,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-[#C9D4BA] hover:shadow-[0_18px_40px_rgba(45,60,30,0.12)]"
               >
-                {/* Top Row */}
-                <div className="flex items-center justify-between">
-                  <span
-                    className="text-[38px] font-light leading-none tracking-tight text-[#D5D5D0] transition-colors duration-300 group-hover:text-[#FF6B00]"
-                  >
+                {/* Service Image */}
+                <div className="relative h-[190px] w-full shrink-0 overflow-hidden sm:h-[210px]">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+
+                  {/* Image Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#172014]/65 via-[#172014]/10 to-transparent" />
+
+                  {/* Service Number */}
+                  <span className="absolute bottom-5 left-7 text-[42px] font-light tracking-tight text-white/90">
                     {service.number}
                   </span>
 
+                  {/* Floating Icon */}
                   <div
-                    className="flex h-12 w-12 items-center justify-center rounded-2xl transition-all duration-300 group-hover:scale-110"
+                    className="absolute bottom-5 right-7 flex h-14 w-14 items-center justify-center rounded-2xl border border-white/40 shadow-lg backdrop-blur-md transition-all duration-300 group-hover:scale-110"
                     style={{
                       backgroundColor: service.background,
                       color: service.color,
                     }}
                   >
-                    <Icon size={24} strokeWidth={1.7} />
+                    <Icon size={27} strokeWidth={1.7} />
                   </div>
                 </div>
 
-                {/* Service Content */}
-                <div className="mt-7 flex flex-1 items-end justify-between gap-4">
-                  <div className="max-w-[390px]">
+                {/* Card Content */}
+                <div className="flex flex-1 items-center justify-between gap-5 p-6 sm:p-8">
+                  <div className="max-w-[470px]">
                     <h3 className="text-[21px] font-bold leading-[1.35] text-[#292929] transition-colors duration-300 group-hover:text-[#526B1D] sm:text-[24px]">
                       {service.title}
                     </h3>
@@ -171,10 +197,9 @@ export default function CoreServices() {
                     </p>
                   </div>
 
-                  <div
-                    className="mb-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#E8E8E5] text-[#777777] transition-all duration-300 group-hover:border-[#FF6B00] group-hover:bg-[#FF6B00] group-hover:text-white"
-                  >
-                    <ArrowUpRight size={19} />
+                  {/* Arrow */}
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[#E8E8E5] text-[#777777] transition-all duration-300 group-hover:border-[#FF6B00] group-hover:bg-[#FF6B00] group-hover:text-white">
+                    <ArrowUpRight size={20} />
                   </div>
                 </div>
 
