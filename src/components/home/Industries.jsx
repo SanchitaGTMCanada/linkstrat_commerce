@@ -134,7 +134,7 @@ export default function Industries() {
   return (
     <section
       id="industries"
-      className="relative overflow-hidden bg-[#F1F3ED] py-20 sm:py-24 lg:py-28"
+      className="relative overflow-hidden bg-[#F1F3ED] py-10 sm:py-14 lg:py-18"
     >
       <div className="container-main mx-auto">
 

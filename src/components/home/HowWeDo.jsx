@@ -66,11 +66,23 @@ const processes = [
 
 export default function HowWeDo() {
   return (
-    <section className="relative overflow-hidden bg-[#EEF1E8] py-20 sm:py-24 lg:py-28">
+    <section className="relative overflow-hidden bg-[#DDE3D3] py-10 sm:py-14 lg:py-18">
 
       {/* Background Decorations */}
-      <div className="pointer-events-none absolute -left-32 top-20 h-80 w-80 rounded-full bg-[#DCE5CD]/50 blur-3xl" />
-      <div className="pointer-events-none absolute -right-32 bottom-10 h-96 w-96 rounded-full bg-[#F8DCC8]/40 blur-3xl" />
+      <div className="pointer-events-none absolute -left-32 top-20 h-80 w-80 rounded-full bg-[#C6D2B5]/50 blur-3xl" />
+      <div className="pointer-events-none absolute -right-32 bottom-10 h-96 w-96 rounded-full bg-[#E8CDBA]/40 blur-3xl" />
+
+      {/* Subtle Background Pattern */}
+      <div className="pointer-events-none absolute inset-0 opacity-[0.12]">
+        <div
+          className="h-full w-full"
+          style={{
+            backgroundImage:
+              "radial-gradient(#526B1D 0.7px, transparent 0.7px)",
+            backgroundSize: "24px 24px",
+          }}
+        />
+      </div>
 
       <div className="container-main relative z-10">
 
@@ -90,7 +102,7 @@ export default function HowWeDo() {
             How We <span className="text-[#FF6B00]">Work</span>
           </h2>
 
-          <p className="mx-auto mt-5 max-w-[700px] text-[16px] leading-[1.85] text-[#666666] sm:text-[18px]">
+          <p className="mx-auto mt-5 max-w-[700px] text-[16px] leading-[1.85] text-[#555F50] sm:text-[18px]">
             A structured, quality-focused approach that connects
             international sourcing with reliable delivery.
           </p>
@@ -100,7 +112,7 @@ export default function HowWeDo() {
         <div className="relative">
 
           {/* CONNECTING LINE - DESKTOP */}
-          <div className="absolute left-[10%] right-[10%] top-[45px] hidden h-[2px] bg-[#D5DDCA] lg:block" />
+          <div className="absolute left-[10%] right-[10%] top-[45px] hidden h-[2px] bg-[#BCC9AD] lg:block" />
 
           {/* PROCESS ITEMS */}
           <div className="grid items-stretch gap-10 sm:grid-cols-2 lg:grid-cols-5 lg:gap-5">
@@ -122,17 +134,17 @@ export default function HowWeDo() {
                 >
 
                   {/* ICON NODE */}
-                  <div className="relative z-10 flex h-[90px] w-[90px] shrink-0 items-center justify-center rounded-full border-[5px] border-[#EEF1E8] bg-[#526B1D] text-white shadow-[0_0_0_1px_#D5DDCA] transition-all duration-500 group-hover:scale-110 group-hover:bg-[#FF6B00]">
+                  <div className="relative z-10 flex h-[90px] w-[90px] shrink-0 items-center justify-center rounded-full border-[5px] border-[#DDE3D3] bg-[#526B1D] text-white shadow-[0_0_0_1px_#BCC9AD] transition-all duration-500 group-hover:scale-110 group-hover:bg-[#FF6B00]">
                     <Icon size={34} strokeWidth={1.6} />
                   </div>
 
                   {/* STEP NUMBER */}
-                  <span className="mt-5 text-[13px] font-bold tracking-[3px] text-[#FF6B00]">
+                  <span className="mt-5 text-[13px] font-bold tracking-[3px] text-[#E66A18]">
                     STEP {process.number}
                   </span>
 
                   {/* PROCESS CARD */}
-                  <div className="mt-3 flex min-h-[450px] w-full flex-1 flex-col overflow-hidden rounded-2xl border border-[#E1E6D9] bg-white shadow-[0_5px_20px_rgba(45,60,30,0.04)] transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-[0_18px_40px_rgba(45,60,30,0.12)]">
+                  <div className="mt-3 flex min-h-[450px] w-full flex-1 flex-col overflow-hidden rounded-2xl border border-[#D8E0D0] bg-white shadow-[0_8px_25px_rgba(45,60,30,0.08)] transition-all duration-300 group-hover:-translate-y-1 group-hover:border-[#C0CEB2] group-hover:shadow-[0_18px_40px_rgba(45,60,30,0.16)]">
 
                     {/* CARD IMAGE */}
                     <div className="relative h-[170px] w-full shrink-0 overflow-hidden">
@@ -205,8 +217,13 @@ export default function HowWeDo() {
         </div>
 
         {/* BOTTOM HIGHLIGHT */}
-        <div className="mt-16 flex flex-col items-center justify-between gap-5 rounded-2xl bg-[#292929] px-7 py-8 text-center sm:flex-row sm:px-10 sm:text-left">
-
+        <motion.div
+          initial={{ opacity: 0, y: 25 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mt-16 flex flex-col items-center justify-between gap-5 rounded-2xl bg-[#292929] px-7 py-8 text-center shadow-[0_12px_30px_rgba(0,0,0,0.12)] sm:flex-row sm:px-10 sm:text-left"
+        >
           <div>
             <h3 className="text-xl font-semibold text-white sm:text-2xl">
               Every step. Every detail. Every commitment.
@@ -224,8 +241,7 @@ export default function HowWeDo() {
               Quality & Reliability
             </span>
           </div>
-
-        </div>
+        </motion.div>
 
       </div>
     </section>

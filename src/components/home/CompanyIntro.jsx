@@ -6,7 +6,7 @@ import { ArrowUpRight, Globe2 } from "lucide-react";
 
 export default function CompanyIntro() {
   return (
-    <section className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-28">
+    <section className="relative overflow-hidden bg-white py-10 sm:py-14 lg:py-18">
       <div className="container-main">
 
         <div className="grid items-center gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
