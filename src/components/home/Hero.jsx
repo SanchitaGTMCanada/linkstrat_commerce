@@ -5,63 +5,88 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative isolate flex min-h-[560px] items-center overflow-hidden bg-[#101D32] lg:min-h-[620px]">
+    <section className="relative isolate flex min-h-[540px] items-center overflow-hidden bg-[#101D32] lg:min-h-[600px]">
 
       {/* BACKGROUND IMAGE */}
       <div
         className="absolute inset-0 -z-20 bg-cover bg-center"
         style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=2200&q=90')",
+          backgroundImage: "url('/images/home/hero.png')",
         }}
       />
 
-      {/* DEEP NAVY OVERLAY */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-[#101D32]/95 via-[#101D32]/85 to-[#101D32]/35" />
+      {/* SMOOTH FULL-WIDTH LEFT-TO-RIGHT GRADIENT */}
+      <div
+        className="absolute inset-0 -z-10"
+        style={{
+          background:
+            "linear-gradient(to right, rgba(16,29,50,0.97) 0%, rgba(16,29,50,0.93) 25%, rgba(16,29,50,0.85) 40%, rgba(16,29,50,0.68) 55%, rgba(16,29,50,0.42) 70%, rgba(16,29,50,0.18) 85%, rgba(16,29,50,0.05) 100%)",
+        }}
+      />
 
-      {/* BOTTOM NAVY SHADOW */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-[#101D32]/70 via-transparent to-[#101D32]/20" />
+      {/* SUBTLE BOTTOM SHADING */}
+      <div
+        className="absolute inset-0 -z-10"
+        style={{
+          background:
+            "linear-gradient(to top, rgba(16,29,50,0.35) 0%, transparent 40%)",
+        }}
+      />
 
       {/* LEFT ORANGE ACCENT */}
       <div className="absolute left-0 top-0 h-full w-[4px] bg-[#FF6B00]" />
 
       {/* HERO CONTENT */}
-      <div className="container-main relative z-10 flex min-h-[560px] w-full items-center py-16 lg:min-h-[620px] lg:py-20">
+      <div className="container-main relative z-10 flex min-h-[540px] w-full items-center py-12 lg:min-h-[600px]">
 
         <div className="grid w-full items-center lg:grid-cols-[1.1fr_0.9fr]">
 
-          <div className="max-w-[760px]">
+          {/* HERO TEXT */}
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="max-w-[690px] py-5"
+          >
 
             {/* LABEL */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7 }}
-              className="mb-7 inline-flex items-center gap-3 rounded-full border border-white/20 bg-[#101D32]/50 px-6 py-3 shadow-sm backdrop-blur-md"
+              transition={{ duration: 0.7, delay: 0.15 }}
+              className="mb-5 inline-flex items-center gap-2.5"
             >
-              <span className="h-2.5 w-2.5 rounded-full bg-[#FF6B00]" />
+              <span className="h-[2px] w-8 rounded-full bg-[#FF6B00]" />
 
-              <span className="text-xs font-semibold uppercase tracking-[2.5px] text-white sm:text-sm">
+              <span className="font-sans text-[11px] font-semibold uppercase tracking-[2.5px] text-[#F5F3ED]/90 sm:text-xs">
                 Global Commerce
               </span>
             </motion.div>
 
             {/* MAIN HEADING */}
             <motion.h1
-              initial={{ opacity: 0, y: 35 }}
+              initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.15 }}
-              className="text-[42px] font-bold leading-[1.1] tracking-[-1.8px] text-white sm:text-[54px] lg:text-[68px] xl:text-[74px]"
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-[36px] font-bold leading-[1.12] tracking-[-1.8px] text-[#F5F3ED] sm:text-[46px] lg:text-[54px] xl:text-[62px]"
             >
               Sourced in Canada.
               <br />
-
-              <span className="font-semibold text-[#FF6B00]">
+              <span className="font-semibold text-[#F5F3ED]">
                 Trusted in India.
               </span>
             </motion.h1>
 
-          </div>
+            {/* ORANGE UNDERLINE */}
+            <motion.div
+              initial={{ width: 0 }}
+              animate={{ width: "65px" }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+              className="mt-6 h-[3px] rounded-full bg-[#FF6B00]"
+            />
+
+          </motion.div>
+
         </div>
       </div>
 

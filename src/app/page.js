@@ -16,7 +16,7 @@ export default function Home() {
       <Industries/>
       <HowWeDo/>
       <CoreServices/>
-      <Consultation/>
+      {/* <Consultation/> */}
       <Footer/>
       
     </>

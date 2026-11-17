@@ -17,7 +17,7 @@ const processes = [
     title: "Procurement",
     subtitle: "Strategic sourcing",
     description:
-      "We procure products from reliable vendors, ensuring quality specifications, competitive sourcing and customer requirements.",
+      "We procure our products from selective vendors ensuring satisfaction of customer",
     icon: Search,
     image:
       "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=85",
@@ -27,7 +27,7 @@ const processes = [
     title: "Quality Control",
     subtitle: "Quality assurance",
     description:
-      "Every product undergoes quality checks to ensure compliance with specifications and expected standards.",
+      "Stringent quality checks. Ensure top-notch standards. Reliable quality control.",
     icon: ShieldCheck,
     image:
       "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=85",
@@ -37,7 +37,7 @@ const processes = [
     title: "Processing & Packaging",
     subtitle: "Careful preparation",
     description:
-      "Products are processed, handled and packaged with attention to safety, quality and customer requirements.",
+      "We process and package the products at our warehouse with utmost safety",
     icon: PackageCheck,
     image:
       "https://images.unsplash.com/photo-1601598851547-4302969d0614?auto=format&fit=crop&w=900&q=85",
@@ -47,7 +47,7 @@ const processes = [
     title: "Logistics & Shipping",
     subtitle: "Global transportation",
     description:
-      "We coordinate transportation and shipping to support efficient movement of products from source to destination.",
+      "We ensure that our logistics team helps in bridging the gap between product and customer",
     icon: Truck,
     image:
       "https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=900&q=85",
@@ -57,7 +57,7 @@ const processes = [
     title: "Warehouse & Distribution",
     subtitle: "Reliable delivery",
     description:
-      "Our distribution process focuses on proper handling, storage and timely delivery to customers.",
+      "Our distribution team ensures that the product reaches our customer on time and",
     icon: Warehouse,
     image:
       "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=900&q=85",
@@ -66,7 +66,7 @@ const processes = [
 
 export default function HowWeDo() {
   return (
-    <section className="relative overflow-hidden bg-[#F4F5F0] py-10 sm:py-14 lg:py-18">
+    <section className="relative overflow-hidden bg-[#F4F5F0] py-5 sm:py-7 lg:py-10">
 
       {/* BACKGROUND DECORATIONS */}
       <div className="pointer-events-none absolute -left-32 top-20 h-80 w-80 rounded-full bg-[#E2E7EC]/60 blur-3xl" />
@@ -96,14 +96,14 @@ export default function HowWeDo() {
         >
           <div className="flex items-center justify-center gap-3">
             <span className="h-[2px] w-9 bg-[#FF6B00]" />
-            <span className="text-sm font-semibold uppercase tracking-[2.5px] text-[#FF6B00]">
-              From Source to Destination
+            <span className="text-sm font-semibold uppercase tracking-[2.5px] text-[#101D32]">
+             How We Do
             </span>
             <span className="h-[2px] w-9 bg-[#FF6B00]" />
           </div>
 
-          <h2 className="mt-5 text-[36px] font-bold leading-tight tracking-[-1px] text-[#101D32] sm:text-[46px] lg:text-[54px]">
-            How We <span className="text-[#FF6B00]">Work</span>
+          <h2 className="mt-5 text-[36px] font-bold leading-tight tracking-[-1px]  sm:text-[46px] lg:text-[54px]">
+             <span className="text-[#FF6B00]">What We Do</span>
           </h2>
 
           <p className="mx-auto mt-5 max-w-[700px] text-[16px] leading-[1.85] text-[#4B5563] sm:text-[18px]">
@@ -177,15 +177,15 @@ export default function HowWeDo() {
                       </h3>
 
                       {/* SUBTITLE */}
-                      <p className="mt-2 min-h-[36px] text-xs font-semibold uppercase tracking-[1px] text-[#FF6B00]">
+                      {/* <p className="mt-2 min-h-[36px] text-xs font-semibold uppercase tracking-[1px] text-[#FF6B00]">
                         {process.subtitle}
-                      </p>
+                      </p> */}
 
                       {/* ACCENT */}
                       <div className="mx-auto my-4 h-[2px] w-12 shrink-0 rounded-full bg-[#FF6B00] transition-all duration-300 group-hover:w-20" />
 
                       {/* DESCRIPTION */}
-                      <p className="flex-1 text-[14px] leading-[1.8] text-[#596273]">
+                      <p className="flex-1 text-[17px] leading-[1.8] text-[#596273]">
                         {process.description}
                       </p>
 
@@ -216,7 +216,7 @@ export default function HowWeDo() {
         </div>
 
         {/* BOTTOM HIGHLIGHT */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -240,7 +240,7 @@ export default function HowWeDo() {
               Quality & Reliability
             </span>
           </div>
-        </motion.div>
+        </motion.div> */}
 
       </div>
     </section>

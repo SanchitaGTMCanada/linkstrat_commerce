@@ -10,6 +10,7 @@ import {
   Shirt,
   ArrowUpRight,
 } from "lucide-react";
+import { Globe2 } from "lucide-react";
 
 const industries = [
   {
@@ -91,15 +92,16 @@ function IndustryCard({ industry, index, featured = false }) {
           {industry.number}
         </span>
 
-        <div className="flex h-10 w-10 items-center justify-center rounded-full border border-white/35 bg-[#101D32]/40 text-white backdrop-blur-md transition-all duration-300 group-hover:rotate-45 group-hover:border-[#FF6B00] group-hover:bg-[#FF6B00]">
-          <ArrowUpRight size={20} />
+        {/* TOP RIGHT GLOBE ICON */}
+        <div className="flex h-10 w-10 items-center justify-center rounded-full border border-white/35 bg-[#101D32]/40 text-white backdrop-blur-md transition-all duration-300 group-hover:scale-110 group-hover:border-[#FF6B00] group-hover:bg-[#FF6B00]">
+          <Globe2 size={20} strokeWidth={1.7} />
         </div>
       </div>
 
       {/* BOTTOM CONTENT */}
       <div className="relative z-10">
 
-        {/* ICON */}
+        {/* INDUSTRY ICON */}
         <div
           className={`mb-5 flex items-center justify-center rounded-2xl border border-white/25 bg-white/15 text-white shadow-lg backdrop-blur-md transition-all duration-300 group-hover:border-[#FF6B00] group-hover:bg-[#FF6B00] ${
             featured ? "h-[66px] w-[66px]" : "h-[52px] w-[52px]"
@@ -173,16 +175,16 @@ export default function Industries() {
             {/* HEADING */}
             <h2 className="text-[38px] font-bold leading-[1.12] tracking-[-1px] text-white sm:text-[48px] lg:text-[54px]">
               Industries We{" "}
-              <span className="text-[#FF6B00]">Serve.</span>
+         Serve.
             </h2>
           </div>
 
           {/* DESCRIPTION */}
-          <p className="max-w-[470px] text-[16px] leading-[1.9] text-white/75 sm:text-[17px]">
+          {/* <p className="max-w-[470px] text-[16px] leading-[1.9] text-white/75 sm:text-[17px]">
             We support a diverse range of industries with dependable
             sourcing, transparent operations and reliable international
             trade partnerships.
-          </p>
+          </p> */}
         </motion.div>
 
         {/* INDUSTRY PHOTO GRID */}
@@ -209,7 +211,7 @@ export default function Industries() {
         </div>
 
         {/* BOTTOM STATEMENT */}
-        <div className="mt-12 flex flex-col gap-4 border-t border-white/15 pt-7 sm:flex-row sm:items-center sm:justify-between">
+        {/* <div className="mt-12 flex flex-col gap-4 border-t border-white/15 pt-7 sm:flex-row sm:items-center sm:justify-between">
 
           <p className="max-w-[650px] text-[15px] leading-[1.8] text-white/70 sm:text-[16px]">
             Every partnership is approached with a commitment to
@@ -221,7 +223,7 @@ export default function Industries() {
             Trusted Global Partnerships
           </div>
 
-        </div>
+        </div> */}
 
       </div>
     </section>
