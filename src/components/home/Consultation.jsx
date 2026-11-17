@@ -61,7 +61,7 @@ export default function Consultation() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-white py-20 sm:py-24 lg:py-28"
+      className="relative overflow-hidden bg-[#DDE3D3] py-20 sm:py-24 lg:py-28"
     >
       <div className="container-main relative z-10 mx-auto px-5 sm:px-8 lg:px-12">
         <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">

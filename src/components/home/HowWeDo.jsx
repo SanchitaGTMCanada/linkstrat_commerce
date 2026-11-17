@@ -66,19 +66,19 @@ const processes = [
 
 export default function HowWeDo() {
   return (
-    <section className="relative overflow-hidden bg-[#DDE3D3] py-10 sm:py-14 lg:py-18">
+    <section className="relative overflow-hidden bg-[#F4F5F0] py-10 sm:py-14 lg:py-18">
 
-      {/* Background Decorations */}
-      <div className="pointer-events-none absolute -left-32 top-20 h-80 w-80 rounded-full bg-[#C6D2B5]/50 blur-3xl" />
-      <div className="pointer-events-none absolute -right-32 bottom-10 h-96 w-96 rounded-full bg-[#E8CDBA]/40 blur-3xl" />
+      {/* BACKGROUND DECORATIONS */}
+      <div className="pointer-events-none absolute -left-32 top-20 h-80 w-80 rounded-full bg-[#E2E7EC]/60 blur-3xl" />
+      <div className="pointer-events-none absolute -right-32 bottom-10 h-96 w-96 rounded-full bg-[#E8E9E2]/60 blur-3xl" />
 
-      {/* Subtle Background Pattern */}
-      <div className="pointer-events-none absolute inset-0 opacity-[0.12]">
+      {/* SUBTLE BACKGROUND PATTERN */}
+      <div className="pointer-events-none absolute inset-0 opacity-[0.08]">
         <div
           className="h-full w-full"
           style={{
             backgroundImage:
-              "radial-gradient(#526B1D 0.7px, transparent 0.7px)",
+              "radial-gradient(#101D32 0.7px, transparent 0.7px)",
             backgroundSize: "24px 24px",
           }}
         />
@@ -94,15 +94,19 @@ export default function HowWeDo() {
           transition={{ duration: 0.7 }}
           className="mb-16 text-center"
         >
-          <span className="text-sm font-semibold uppercase tracking-[2.5px] text-[#526B1D]">
-            From Source to Destination
-          </span>
+          <div className="flex items-center justify-center gap-3">
+            <span className="h-[2px] w-9 bg-[#FF6B00]" />
+            <span className="text-sm font-semibold uppercase tracking-[2.5px] text-[#FF6B00]">
+              From Source to Destination
+            </span>
+            <span className="h-[2px] w-9 bg-[#FF6B00]" />
+          </div>
 
-          <h2 className="mt-5 text-[36px] font-bold leading-tight tracking-[-1px] text-[#292929] sm:text-[46px] lg:text-[54px]">
+          <h2 className="mt-5 text-[36px] font-bold leading-tight tracking-[-1px] text-[#101D32] sm:text-[46px] lg:text-[54px]">
             How We <span className="text-[#FF6B00]">Work</span>
           </h2>
 
-          <p className="mx-auto mt-5 max-w-[700px] text-[16px] leading-[1.85] text-[#555F50] sm:text-[18px]">
+          <p className="mx-auto mt-5 max-w-[700px] text-[16px] leading-[1.85] text-[#4B5563] sm:text-[18px]">
             A structured, quality-focused approach that connects
             international sourcing with reliable delivery.
           </p>
@@ -112,7 +116,7 @@ export default function HowWeDo() {
         <div className="relative">
 
           {/* CONNECTING LINE - DESKTOP */}
-          <div className="absolute left-[10%] right-[10%] top-[45px] hidden h-[2px] bg-[#BCC9AD] lg:block" />
+          <div className="absolute left-[10%] right-[10%] top-[45px] hidden h-[2px] bg-[#CBD1D9] lg:block" />
 
           {/* PROCESS ITEMS */}
           <div className="grid items-stretch gap-10 sm:grid-cols-2 lg:grid-cols-5 lg:gap-5">
@@ -134,17 +138,12 @@ export default function HowWeDo() {
                 >
 
                   {/* ICON NODE */}
-                  <div className="relative z-10 flex h-[90px] w-[90px] shrink-0 items-center justify-center rounded-full border-[5px] border-[#DDE3D3] bg-[#526B1D] text-white shadow-[0_0_0_1px_#BCC9AD] transition-all duration-500 group-hover:scale-110 group-hover:bg-[#FF6B00]">
+                  <div className="relative z-10 flex h-[90px] w-[90px] shrink-0 items-center justify-center rounded-full border-[5px] border-[#F4F5F0] bg-[#101D32] text-white shadow-[0_0_0_1px_#CBD1D9] transition-all duration-500 group-hover:scale-110 group-hover:bg-[#FF6B00]">
                     <Icon size={34} strokeWidth={1.6} />
                   </div>
 
-                  {/* STEP NUMBER */}
-                  <span className="mt-5 text-[13px] font-bold tracking-[3px] text-[#E66A18]">
-                    STEP {process.number}
-                  </span>
-
                   {/* PROCESS CARD */}
-                  <div className="mt-3 flex min-h-[450px] w-full flex-1 flex-col overflow-hidden rounded-2xl border border-[#D8E0D0] bg-white shadow-[0_8px_25px_rgba(45,60,30,0.08)] transition-all duration-300 group-hover:-translate-y-1 group-hover:border-[#C0CEB2] group-hover:shadow-[0_18px_40px_rgba(45,60,30,0.16)]">
+                  <div className="mt-3 flex min-h-[450px] w-full flex-1 flex-col overflow-hidden rounded-2xl border border-[#E0E3DC] bg-white shadow-[0_8px_25px_rgba(16,29,50,0.07)] transition-all duration-300 group-hover:-translate-y-1 group-hover:border-[#FF6B00]/40 group-hover:shadow-[0_18px_40px_rgba(16,29,50,0.13)]">
 
                     {/* CARD IMAGE */}
                     <div className="relative h-[170px] w-full shrink-0 overflow-hidden">
@@ -155,16 +154,16 @@ export default function HowWeDo() {
                         className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
 
-                      {/* Image Overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#172014]/65 via-transparent to-transparent" />
+                      {/* IMAGE OVERLAY */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#101D32]/75 via-transparent to-transparent" />
 
-                      {/* Image Number */}
-                      <span className="absolute bottom-4 left-5 text-[32px] font-light tracking-wide text-white/90">
+                      {/* IMAGE NUMBER */}
+                      <span className="absolute bottom-4 left-5 text-[32px] font-light tracking-wide text-white/95">
                         {process.number}
                       </span>
 
-                      {/* Icon Badge */}
-                      <div className="absolute bottom-4 right-4 flex h-11 w-11 items-center justify-center rounded-xl border border-white/30 bg-white/90 text-[#526B1D] shadow-lg backdrop-blur-sm">
+                      {/* ICON BADGE */}
+                      <div className="absolute bottom-4 right-4 flex h-11 w-11 items-center justify-center rounded-xl border border-white/30 bg-[#101D32]/90 text-[#FF6B00] shadow-lg backdrop-blur-sm">
                         <Icon size={22} strokeWidth={1.8} />
                       </div>
                     </div>
@@ -173,12 +172,12 @@ export default function HowWeDo() {
                     <div className="flex flex-1 flex-col p-5 sm:p-6">
 
                       {/* TITLE */}
-                      <h3 className="flex min-h-[64px] items-center justify-center text-[19px] font-bold leading-[1.35] text-[#292929]">
+                      <h3 className="flex min-h-[64px] items-center justify-center text-[19px] font-bold leading-[1.35] text-[#101D32]">
                         {process.title}
                       </h3>
 
                       {/* SUBTITLE */}
-                      <p className="mt-2 min-h-[36px] text-xs font-semibold uppercase tracking-[1px] text-[#526B1D]">
+                      <p className="mt-2 min-h-[36px] text-xs font-semibold uppercase tracking-[1px] text-[#FF6B00]">
                         {process.subtitle}
                       </p>
 
@@ -186,13 +185,13 @@ export default function HowWeDo() {
                       <div className="mx-auto my-4 h-[2px] w-12 shrink-0 rounded-full bg-[#FF6B00] transition-all duration-300 group-hover:w-20" />
 
                       {/* DESCRIPTION */}
-                      <p className="flex-1 text-[14px] leading-[1.8] text-[#707070]">
+                      <p className="flex-1 text-[14px] leading-[1.8] text-[#596273]">
                         {process.description}
                       </p>
 
                       {/* CARD BOTTOM */}
-                      <div className="mt-5 border-t border-[#EEEEEC] pt-4">
-                        <span className="text-xs font-semibold uppercase tracking-wider text-[#526B1D]">
+                      <div className="mt-5 border-t border-[#E9EBE6] pt-4">
+                        <span className="text-xs font-semibold uppercase tracking-wider text-[#101D32]">
                           Process {process.number}
                         </span>
                       </div>
@@ -222,14 +221,14 @@ export default function HowWeDo() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mt-16 flex flex-col items-center justify-between gap-5 rounded-2xl bg-[#292929] px-7 py-8 text-center shadow-[0_12px_30px_rgba(0,0,0,0.12)] sm:flex-row sm:px-10 sm:text-left"
+          className="mt-16 flex flex-col items-center justify-between gap-5 rounded-2xl bg-[#101D32] px-7 py-8 text-center shadow-[0_12px_30px_rgba(16,29,50,0.15)] sm:flex-row sm:px-10 sm:text-left"
         >
           <div>
             <h3 className="text-xl font-semibold text-white sm:text-2xl">
               Every step. Every detail. Every commitment.
             </h3>
 
-            <p className="mt-2 text-sm leading-6 text-white/65 sm:text-base">
+            <p className="mt-2 text-sm leading-6 text-white/70 sm:text-base">
               A process-driven approach built around reliability and trust.
             </p>
           </div>
