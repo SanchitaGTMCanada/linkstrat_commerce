@@ -21,7 +21,7 @@ const teamMembers = [
     experience: "20+ Years Experience",
     description:
       "Marketing graduate with over 20 years of experience in sales and business development across the furniture, art, and home décor industries. Throughout my career, I have built strong skills in team leadership, strategic planning, and revenue growth.",
-    image: "/images/team/julia-solorio.jpg",
+    image: "/images/team/julia.webp",
   },
   {
     number: "02",
@@ -32,7 +32,7 @@ const teamMembers = [
     experience: "3+ Years Experience",
     description:
       "Logistics professional with over 3 years of experience in port operations and supply chain management. Skilled in coordinating complex shipping activities, optimizing workflows, and ensuring smooth communication between stakeholders.",
-    image: "/images/team/mohamed-hachim-elazhari.jpg",
+    image: "/images/team/mohamed.webp",
   },
 ];
 
@@ -67,89 +67,22 @@ export default function OurTeamPage() {
             </div>
 
             <h1 className="text-5xl font-bold leading-[1.08] tracking-tight text-white sm:text-6xl lg:text-[76px]">
-              Our People.
-              <br />
-              <span className="text-[#FF8533]">Our Strength.</span>
+              Our Team.
+            
             </h1>
 
-            <p className="mt-7 max-w-xl text-base leading-8 text-white/75 sm:text-lg">
-              Meet the professionals bringing international experience,
-              industry knowledge and trusted relationships to global trade.
-            </p>
-
-            <div className="mt-9 flex flex-wrap items-center gap-3 text-sm text-white/75">
-              <a href="/" className="transition hover:text-[#FF8533]">
-                Home
-              </a>
-              <span className="text-[#FF8533]">/</span>
-              <span className="font-semibold text-white">Our Team</span>
-            </div>
+           
+            
           </motion.div>
         </div>
 
         <div className="absolute bottom-0 left-0 h-1 w-full bg-gradient-to-r from-[#526B1D] via-[#FF6B00] to-[#526B1D]" />
       </section>
 
-      {/* INTRODUCTION */}
-      <section className="relative bg-white px-5 py-20 sm:px-8 lg:px-12 lg:py-24">
-        <div className="container-main mx-auto">
-          <div className="grid items-end gap-10 lg:grid-cols-[1fr_0.85fr] lg:gap-20">
 
-            <motion.div
-              initial={{ opacity: 0, y: 25 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <div className="mb-5 flex items-center gap-3">
-                <span className="h-[3px] w-10 rounded-full bg-[#FF6B00]" />
-                <span className="text-xs font-bold uppercase tracking-[2.5px] text-[#526B1D]">
-                  Meet Our Team
-                </span>
-              </div>
-
-              <h2 className="max-w-2xl text-[36px] font-bold leading-[1.15] text-[#101D32] sm:text-[46px] lg:text-[54px]">
-                Experience That
-                <br />
-                <span className="text-[#FF6B00]">Connects Markets.</span>
-              </h2>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 25 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.15 }}
-            >
-              <p className="text-[15px] leading-[2] text-[#666666] sm:text-base">
-                Our team brings together professionals with experience across
-                marketing, logistics and international business. With regional
-                expertise and a shared commitment to reliability, we help build
-                stronger connections between markets.
-              </p>
-
-              <div className="mt-6 flex items-center gap-3">
-                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#EEF1E8] text-[#526B1D]">
-                  <Globe2 size={22} />
-                </div>
-
-                <div>
-                  <p className="text-sm font-bold text-[#101D32]">
-                    International Perspective
-                  </p>
-                  <p className="mt-1 text-xs text-[#888888]">
-                    Regional knowledge. Global connections.
-                  </p>
-                </div>
-              </div>
-            </motion.div>
-
-          </div>
-        </div>
-      </section>
 
       {/* TEAM PROFILES */}
-      <section className="relative overflow-hidden bg-[#F0F2EC] px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
+      <section className="relative overflow-hidden bg-[#F0F2EC] px-5 py-10 sm:px-8 lg:px-6 lg:py-18">
 
         {/* Background Decorations */}
         <div className="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-[#DCE5CD]/60 blur-3xl" />
@@ -157,25 +90,7 @@ export default function OurTeamPage() {
 
         <div className="container-main relative z-10 mx-auto">
 
-          {/* Section Header */}
-          <div className="mb-14 flex flex-col justify-between gap-5 md:flex-row md:items-end">
-            <div>
-              <span className="text-xs font-bold uppercase tracking-[2.5px] text-[#526B1D]">
-                Leadership & Regional Expertise
-              </span>
-
-              <h2 className="mt-4 text-3xl font-bold text-[#101D32] sm:text-4xl lg:text-5xl">
-                The People Behind
-                <br className="hidden sm:block" />
-                <span className="text-[#FF6B00]">Our Partnerships.</span>
-              </h2>
-            </div>
-
-            <p className="max-w-md text-sm leading-8 text-[#707070] sm:text-base">
-              Dedicated professionals supporting our international network
-              through knowledge, experience and collaboration.
-            </p>
-          </div>
+       
 
           {/* Profile Cards */}
           <div className="grid items-stretch gap-8 lg:grid-cols-2 lg:gap-10">
@@ -250,18 +165,7 @@ export default function OurTeamPage() {
                     {member.description}
                   </p>
 
-                  {/* Bottom Information */}
-                  <div className="mt-auto flex flex-wrap items-center justify-between gap-4 border-t border-white/15 pt-5">
-                    <div className="flex items-center gap-2 text-xs font-semibold text-white/75">
-                      <Users size={16} className="text-[#AFC18C]" />
-                      Regional Leadership
-                    </div>
-
-                    <span className="flex items-center gap-2 text-xs font-semibold text-[#FF8533]">
-                      Linkstrat Global Commerce
-                      <ArrowUpRight size={15} />
-                    </span>
-                  </div>
+                  
                 </div>
 
                 {/* Bottom Accent */}
@@ -274,7 +178,7 @@ export default function OurTeamPage() {
       </section>
 
       {/* BRAND MESSAGE */}
-      <section className="bg-white px-5 py-20 sm:px-8 lg:px-12">
+      {/* <section className="bg-white px-5 py-20 sm:px-8 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -314,7 +218,7 @@ export default function OurTeamPage() {
             </a>
           </div>
         </motion.div>
-      </section>
+      </section> */}
 
       <Footer />
 
