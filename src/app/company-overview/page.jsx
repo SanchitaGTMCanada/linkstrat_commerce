@@ -123,19 +123,15 @@ export default function CompanyOverviewPage() {
             <span className="h-[2px] w-8 bg-[#FF6B00]" />
           </span>
 
-          <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
+          {/* <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
             Connecting Global Markets.
             <span className="mt-2 block text-[#FF8533]">
               Delivering Trusted Trade.
             </span>
-          </h1>
+          </h1> */}
 
           <p className="mx-auto mt-7 max-w-3xl text-sm leading-[2] text-white/85 sm:text-base lg:text-lg">
-            Linkstrat Global Commerce operates as a trusted global import
-            partner, leveraging a strong Canada–India sourcing network. The
-            company is built on integrity, compliance, reliability, and
-            long-term partnerships, and follows a process-driven,
-            institution-ready operating model.
+            Linkstrat Global Commerce operates as a trusted global import partner, leveraging a strong Canada–India sourcing network. The company is built on integrity, compliance, reliability, and long-term partnerships, and follows a process-driven, institution-ready operating model.
           </p>
 
           <div className="mt-9 flex justify-center">
@@ -168,17 +164,14 @@ export default function CompanyOverviewPage() {
             <SectionLabel>About Linkstrat</SectionLabel>
 
             <h2 className="max-w-xl text-3xl font-bold leading-[1.2] text-[#101D32] sm:text-4xl lg:text-[48px]">
-              Let’s Simplify Your International Trade Journey Together.
+              Let’s simplify your international trade journey together
             </h2>
 
             <div className="mt-7 space-y-5 text-sm leading-[2] text-[#626262] sm:text-base">
               <p>
-                We bridge continents through seamless trade and logistics
-                solutions. As a strategic import-export entity based in India,
-                with key operations linked to Canada, we specialize in
-                providing end-to-end support in international trade,
-                including logistics, procurement, customs, and overseas
-                supply chain optimization.
+                We bridge continents through seamless trade and logistics solutions. As a strategic import-export entity based in India, with key operations linked to Canada, we specialize in providing end-to-end support in international trade, including logistics, procurement, customs, and overseas supply chain optimization.
+
+Our expertise enables businesses to expand into global markets with confidence and clarity.
               </p>
 
               <p>
@@ -241,16 +234,7 @@ export default function CompanyOverviewPage() {
 
         <div className="container-main relative z-10 mx-auto">
 
-          <div className="mb-16 max-w-2xl">
-            <SectionLabel light>Our Foundation</SectionLabel>
-
-            <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
-              Built on Purpose.
-              <span className="block text-[#AFC18C]">
-                Driven by Possibility.
-              </span>
-            </h2>
-          </div>
+     
 
           {/* Speciality */}
           <div className="grid items-center gap-0 lg:grid-cols-2">
@@ -282,20 +266,10 @@ export default function CompanyOverviewPage() {
               <div className="mt-5 h-[3px] w-14 rounded-full bg-[#FF6B00]" />
 
               <p className="mt-6 text-sm leading-[2] text-white/75 sm:text-base">
-                The speciality of Linkstrat Global Commerce is our
-                association with manufacturers and manufacturers across
-                the globe, from whom we procure, process and sell to buyers
-                in competitive prices located in different parts of the
-                world. Our potential buyers are located worldwide.
+                The specialty of Linkstart global commerce is our association with many farmers/growers and manufacturers across the globe, from whom we procure, process and sell it to buyers in competitive prices located in different parts of the world. Our potential buyers are located worldwide. Being an international company, we procure and provide premium quality products to our buyers. We are committed to provide the best quality product and services to our buyers to maintain a healthy relationship with both our suppliers and buyers.
               </p>
 
-              <p className="mt-4 text-sm leading-[2] text-white/75 sm:text-base">
-                Being an international company, we are aware and sensitive
-                towards products to our buyers. We are committed to provide
-                the best quality product and services to our buyers to
-                maintain a healthy relationship with both our suppliers
-                and buyers.
-              </p>
+             
             </motion.div>
           </div>
 
@@ -316,14 +290,7 @@ export default function CompanyOverviewPage() {
               <div className="mt-5 h-[3px] w-14 rounded-full bg-[#FF6B00]" />
 
               <p className="mt-6 text-sm leading-[2] text-white/75 sm:text-base">
-                Linkstrat Global Commerce becomes a diversified global
-                business partner by providing world-class quality of
-                agricultural product through reliable procurement, ethical
-                sourcing and sustainable trading practices and unmatched
-                professional services and to build up a brand name which
-                will be the benchmark of the industry. We strive to empower
-                farmers, support local communities, and deliver excellence
-                in every transaction.
+                Linkstart global commerce become a diversified global business partner by providing world class quality of agricultural product through reliable procurement, ethical sourcing and sustainable of trading practice and unmatched professional services and to build up a brand name which will be the benchmark of the industry. We strive to empower farmers, support local communities, and deliver excellence service across the world.
               </p>
             </motion.div>
 
@@ -371,14 +338,7 @@ export default function CompanyOverviewPage() {
               <div className="mt-5 h-[3px] w-14 rounded-full bg-[#FF6B00]" />
 
               <p className="mt-6 text-sm leading-[2] text-white/75 sm:text-base">
-                Linkstrat Global Commerce rests on the values of honesty,
-                integrity, respect, fairness, professionalism, trust,
-                responsibility, commitment and caring. We believe a
-                globally trusted leader in the agricultural trade can be
-                built by fostering innovation, transparency and
-                sustainability to ensure food security for all nations,
-                and value added for stakeholders across every link of
-                the agricultural product supply network.
+                Linkstart Global conduct rests on the values of honesty, Integrity, Respect, Fairness, Purposefulness, Trust, Responsibility, Citizenship and caring. We become a globally trusted leader in the agricultural trade zone by fostering innovation, transparency, sustainability, to ensuring food security, in fair trade, and value added for stakeholders across every link of the agricultural product by the supply network.
               </p>
             </motion.div>
           </div>
@@ -405,17 +365,14 @@ export default function CompanyOverviewPage() {
             viewport={{ once: true }}
             className="mb-14 text-center"
           >
-            <SectionLabel light>Why Work With Us</SectionLabel>
+          
 
             <h2 className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
-              Why Choose Linkstrat
-              <span className="text-[#FF8533]"> Global Commerce?</span>
+              Why Choose Linkstrat Global Commerce
+              {/* <span className="text-[#FF8533]"> Global Commerce?</span> */}
             </h2>
 
-            <p className="mx-auto mt-5 max-w-2xl text-sm leading-8 text-white/75 sm:text-base">
-              A practical, transparent and reliable approach to international
-              sourcing and global trade.
-            </p>
+            
           </motion.div>
 
           <div className="grid overflow-hidden rounded-[22px] border border-white/25 sm:grid-cols-2">
