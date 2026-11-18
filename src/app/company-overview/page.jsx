@@ -103,7 +103,7 @@ export default function CompanyOverviewPage() {
       <section className="relative flex min-h-[390px] items-center justify-center overflow-hidden sm:min-h-[470px] lg:min-h-[540px]">
 
         <img
-          src="https://images.unsplash.com/photo-1546470427-e5b89cd2e8e9?auto=format&fit=crop&w=2000&q=90"
+          src="/images/about-overview/hero.jpg"
           alt="Fresh agricultural produce"
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
@@ -208,7 +208,7 @@ Our expertise enables businesses to expand into global markets with confidence a
 
             <div className="relative h-[340px] overflow-hidden rounded-[25px] shadow-[0_20px_45px_rgba(16,29,50,0.14)] sm:h-[450px]">
               <img
-                src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=1200&q=85"
+                src="images/about-overview/about.jpg"
                 alt="Agricultural chickpeas and pulses"
                 className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
               />
@@ -245,7 +245,7 @@ Our expertise enables businesses to expand into global markets with confidence a
               className="relative h-[280px] overflow-hidden rounded-t-[20px] lg:h-[380px] lg:rounded-l-[22px] lg:rounded-tr-none"
             >
               <img
-                src="https://images.unsplash.com/photo-1592982537447-6f2a6a0b8f5b?auto=format&fit=crop&w=1200&q=85"
+                src="images/about-overview/speciality.jpg"
                 alt="Agricultural quality and procurement"
                 className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
               />
@@ -301,7 +301,7 @@ Our expertise enables businesses to expand into global markets with confidence a
               className="relative order-1 h-[280px] overflow-hidden lg:order-2 lg:h-[380px] lg:rounded-r-[22px]"
             >
               <img
-                src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85"
+                src="images/about-overview/mission.jpg"
                 alt="Agricultural commodities and pulses"
                 className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
               />
@@ -317,7 +317,7 @@ Our expertise enables businesses to expand into global markets with confidence a
               className="relative h-[280px] overflow-hidden lg:h-[380px] lg:rounded-l-[22px]"
             >
               <img
-                src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=1200&q=85"
+                src="images/about-overview/vision.jpg"
                 alt="Fresh agricultural produce ready for trade"
                 className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
               />
@@ -350,7 +350,7 @@ Our expertise enables businesses to expand into global markets with confidence a
       <section className="relative overflow-hidden px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
 
         <img
-          src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=2000&q=85"
+          src="images/about-overview/value.webp"
           alt="Agricultural fields"
           className="absolute inset-0 h-full w-full object-cover"
         />
