@@ -15,9 +15,9 @@ const navigation = [
 ];
 
 const socialLinks = [
-  { name: "LinkedIn", href: "https://www.linkedin.com/", type: "linkedin" },
-  { name: "Instagram", href: "https://www.instagram.com/", type: "instagram" },
-  { name: "Facebook", href: "https://www.facebook.com/", type: "facebook" },
+  { name: "LinkedIn", href: "https://www.linkedin.com/company/linkstrat-global-commerce-pvt-ltd/", type: "linkedin" },
+
+  { name: "Facebook", href: "https://www.facebook.com/profile.php?id=61577906797986", type: "facebook" },
 ];
 
 function SocialIcon({ type }) {
@@ -72,7 +72,7 @@ export default function Footer() {
     />
   </Link>
 
-  <p className="mt-2 text-xs text-white/60">
+  <p className="mt-2 text-sm font-medium text-white/70">
     Sourced in Canada.{" "}
     <span className="text-[#FF6B00]">Trusted in India.</span>
   </p>
@@ -81,27 +81,27 @@ export default function Footer() {
 
           {/* Navigation and CTA */}
           <div className="flex flex-col items-center gap-5 md:items-end">
-              <Link
-              href="/contact"
-              className="group inline-flex items-center gap-2 rounded-full bg-[#FF6B00] px-5 py-2.5 text-xs font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#e85f00]"
-            >
-              Let's Talk
-              <ArrowUpRight
-                size={15}
-                className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-              />
-            </Link>
-            <nav className="flex flex-wrap justify-center gap-x-5 gap-y-3 md:justify-end">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="text-xs font-medium text-white/65 transition-colors hover:text-[#FF6B00]"
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </nav>
+             <Link
+  href="/contact"
+  className="group inline-flex items-center gap-2 rounded-full bg-[#FF6B00] px-5 py-2.5 text-base font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#e85f00]"
+>
+  Let's Talk
+  <ArrowUpRight
+    size={18}
+    className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+  />
+</Link>
+        <nav className="flex flex-wrap justify-center gap-x-5 gap-y-3 md:justify-end">
+  {navigation.map((item) => (
+    <Link
+      key={item.name}
+      href={item.href}
+      className="text-base font-medium text-white/65 transition-colors hover:text-[#FF6B00]"
+    >
+      {item.name}
+    </Link>
+  ))}
+</nav>
 
           
           </div>
@@ -110,17 +110,17 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="flex flex-col items-center justify-between gap-4 border-t border-white/10 py-4 sm:flex-row">
 
-          <p className="text-center text-[11px] text-white/40">
-            © {new Date().getFullYear()} Linkstrat Global Commerce. All rights reserved.
+          <p className="text-center text-[14px] text-white/40">
+            Copyright © {new Date().getFullYear()} Linkstrat Global Commerce Pvt. Ltd. All Rights Reserved
           </p>
 
           <div className="flex items-center gap-4">
-            <Link
+            {/* <Link
               href="/privacy-policy"
               className="text-[11px] text-white/45 transition-colors hover:text-[#FF6B00]"
             >
               Privacy Policy
-            </Link>
+            </Link> */}
 
             <span className="h-1 w-1 rounded-full bg-white/25" />
 
@@ -132,7 +132,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.name}
-                  className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 text-white/60 transition-all duration-300 hover:border-[#FF6B00] hover:bg-[#FF6B00] hover:text-white"
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-white/60 transition-all duration-300 hover:border-[#FF6B00] hover:bg-[#FF6B00] hover:text-white"
                 >
                   <SocialIcon type={social.type} />
                 </a>

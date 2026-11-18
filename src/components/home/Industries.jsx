@@ -20,7 +20,7 @@ const industries = [
       "Fast and flawless supply chains that meet shelf-time demands.",
     icon: ShoppingBasket,
     image:
-      "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1400&q=85",
+      "images/home/industry/fmcg.jpg",
   },
   {
     number: "02",
@@ -29,7 +29,7 @@ const industries = [
       "Cold chain solutions and export-ready sourcing.",
     icon: Sprout,
     image:
-      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=85",
+      "images/home/industry/agroproducts.jpg",
   },
   {
     number: "03",
@@ -38,7 +38,7 @@ const industries = [
       "Custom handling, specialized documentation, and global routing.",
     icon: Cog,
     image:
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=85",
+      "images/home/industry/industrial.jpg",
   },
   {
     number: "04",
@@ -47,7 +47,7 @@ const industries = [
       "End-to-end logistical coordination with built-in compliance.",
     icon: CarFront,
     image:
-      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=85",
+      "images/home/industry/automotive.jpg",
   },
   {
     number: "05",
@@ -56,7 +56,7 @@ const industries = [
       "Source, ship, and store with precision in time-sensitive markets.",
     icon: Shirt,
     image:
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=85",
+      "images/home/industry/text.jpg",
   },
 ];
 

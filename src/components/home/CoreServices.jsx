@@ -21,7 +21,7 @@ const services = [
       "Vendor discovery, material procurement, and supplier management.",
     icon: ShoppingCart,
     image:
-      "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1000&q=85",
+      "images/home/core/procurement.jpg",
   },
   {
     number: "02",
@@ -30,7 +30,7 @@ const services = [
       "Multi-modal freight management with inventory transparency.",
     icon: Truck,
     image:
-      "https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=1000&q=85",
+      "images/home/core/logistic.jpg",
   },
   {
     number: "03",
@@ -39,7 +39,7 @@ const services = [
       "HS code validation, shipping documents, port clearances, and DGFT coordination.",
     icon: FileCheck,
     image:
-      "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1000&q=85",
+      "images/home/core/customs.jpg",
   },
   {
     number: "04",
@@ -48,7 +48,7 @@ const services = [
       "Market entry research, trade compliance, and pricing strategy.",
     icon: Globe2,
     image:
-      "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=85",
+      "images/home/core/export.jpg",
   },
   {
     number: "05",
@@ -57,7 +57,7 @@ const services = [
       "Demand forecasting, route optimization, and stock minimization.",
     icon: Boxes,
     image:
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1000&q=85",
+      "images/home/core/supplychain.jpg",
   },
   {
     number: "06",
@@ -66,7 +66,7 @@ const services = [
       "Guidance on global warehousing, freight contracts, and logistics digitization.",
     icon: Ship,
     image:
-      "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1000&q=85",
+      "images/home/core/overseas.jpg",
   },
 ];
 

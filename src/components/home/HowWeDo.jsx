@@ -20,7 +20,7 @@ const processes = [
       "We procure our products from selective vendors ensuring satisfaction of customer",
     icon: Search,
     image:
-      "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=85",
+      "images/home/procurement.jpg",
   },
   {
     number: "02",
@@ -30,7 +30,7 @@ const processes = [
       "Stringent quality checks. Ensure top-notch standards. Reliable quality control.",
     icon: ShieldCheck,
     image:
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=85",
+      "images/home/Quality.jpg",
   },
   {
     number: "03",
@@ -40,7 +40,7 @@ const processes = [
       "We process and package the products at our warehouse with utmost safety",
     icon: PackageCheck,
     image:
-      "https://images.unsplash.com/photo-1601598851547-4302969d0614?auto=format&fit=crop&w=900&q=85",
+      "images/home/Processing.jpg",
   },
   {
     number: "04",
@@ -50,7 +50,7 @@ const processes = [
       "We ensure that our logistics team helps in bridging the gap between product and customer",
     icon: Truck,
     image:
-      "https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=900&q=85",
+      "images/home/Logistics.jpg",
   },
   {
     number: "05",
@@ -60,7 +60,7 @@ const processes = [
       "Our distribution team ensures that the product reaches our customer on time and",
     icon: Warehouse,
     image:
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=900&q=85",
+      "images/home/Warehouse.jpg",
   },
 ];
 
