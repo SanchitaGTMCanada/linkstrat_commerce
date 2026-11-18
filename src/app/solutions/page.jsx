@@ -26,7 +26,7 @@ const solutions = [
     description:
       "We empower businesses to expand globally through targeted import and export strategies and seamless market integration. From identifying the right overseas markets to establishing trade channels and local compliance, our approach supports sustainable international growth.",
     image:
-      "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1500&q=90",
+      "images/solution/global.jpg",
     icon: Globe2,
     imageAlt: "International business strategy meeting",
     items: [
@@ -47,7 +47,7 @@ const solutions = [
     description:
       "We understand that efficient procurement and sourcing are the foundation of a successful supply chain. Our comprehensive services help you identify reliable suppliers, negotiate favourable terms, and ensure the timely acquisition of goods, whether for domestic use or international trade.",
     image:
-      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1500&q=90",
+      "images/solution/procurement.jpg",
     icon: ShoppingCart,
     imageAlt: "Agricultural fields and crop production",
     items: [
@@ -92,7 +92,7 @@ const solutions = [
     description:
       "At LinkStrat Global, we believe that a we can provide supply chain we successful of any import-export business.Our Supply Chain Optimization services are designed to help your business reduce costs, improve efficiency, and enhance responsiveness across every stage of the supply journey — from source to final destination.",
     image:
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1500&q=90",
+      "images/solution/supplychain.jpg",
     icon: Boxes,
     imageAlt: "Organized warehouse and inventory storage",
     items: [
@@ -113,7 +113,7 @@ const solutions = [
     description:
       "At LinkStrat Global, we specialize in providing end-to-end logistics and transportation solutions tailored to meet the evolving demands of global trade.From streamlining supply chains to optimizing delivery routes, we ensure that your goods move smoothly, securely, and on time across cities, borders, and continents.",
     image:
-      "https://images.unsplash.com/photo-1494412574643-35d324698f9a?auto=format&fit=crop&w=1500&q=90",
+      "images/solution/4067.jpg",
     icon: Truck,
     imageAlt: "Cargo containers and international freight",
     items: [
@@ -153,7 +153,7 @@ const solutions = [
     description:
       "Navigating international trade requires meticulous attention to customs regulations and documentation procedures.At LinkStrat Global, we specialize in handling end-to-end customs clearance and ensuring all your import-export documentation is complete, accurate, and compliant with local and international regulations.",
     image:
-      "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=1500&q=90",
+      "images/solution/6904.jpg",
     icon: FileCheck,
     imageAlt: "Logistics documentation and shipment handling",
     items: [
@@ -194,7 +194,7 @@ const solutions = [
     description:
       "Our specialised Overseas Logistics Consultancy services are designed to guide businesses through the complexities of international supply chains.Whether you’re expanding into new markets or navigating compliance and logistics challenges, we offer customized solutions to ensure cost-effective, smooth delivery within the time limit, Cargo Tracking in operations.",
     image:
-      "https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&fit=crop&w=1500&q=90",
+      "images/solution/overseas.jpg",
     icon: Ship,
     imageAlt: "International shipping and logistics operations",
     items: [
@@ -423,7 +423,7 @@ export default function SolutionsPage() {
       {/* HERO SECTION */}
       <section className="relative isolate flex min-h-[460px] items-center overflow-hidden bg-[#101D32] sm:min-h-[540px] lg:min-h-[580px]">
         <img
-          src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=2200&q=90"
+          src="/images/solution/hero.jpg"
           alt="International shipping and global trade"
           className="absolute inset-0 h-full w-full object-cover"
         />
